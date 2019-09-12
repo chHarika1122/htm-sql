@@ -1,0 +1,134 @@
+
+<html>
+<head>
+
+
+<style>
+
+form{
+border: 5px solid black;
+width:400px;
+padding:20px;
+box-shadow: 3px 3px 15px black;
+}
+
+div{
+color:red;
+font-size:12px;
+font-family:arial;
+}
+
+#btn{
+background-color: rgb(64,187,119);
+width:100px;
+height:25px;
+}
+
+td{
+font-weight: bold;
+}
+
+caption{
+text-shadow: 3px 3px 20px black;
+}
+
+input:{
+border-radius:3px;
+}
+
+
+
+</style>
+<script type="text/javascript">
+
+function showDetails(){
+
+var ACRATE=1500;
+var NONACRATE=1000;
+var name=document.getElementById("nm").value;
+var category=document.getElementById("category").value;
+
+var days=parseInt(document.getElementById("days").value);
+var payable=0;
+var ct="AC"
+if (category==ct)
+{
+
+   payable=days*ACRATE;
+}
+else
+{
+payable=days*NONACRATE;
+}
+
+
+alert("Payable Details :-\n\n"+
+" Name               : "+name+"\n"+
+" Category          : "+category+"\n"+
+" Payable            : "+payable+" /-"+
+"");
+}
+</script>
+</head>
+<body>
+<br/><br/><br/><br/><br/>
+<center>
+<form name="frm" onSubmit="showDetails()">
+<table cellspacing="20" align="center">
+	<caption><h1>HOTEL BOOKING</h1></caption>
+	<tr>
+		<td>Customer Name:</td>
+		<td><input id="nm" type="text"  pattern="^[a-zA-Z]{5,}$" required title="Number Should be At least 5 Char" >
+		</td>		
+	</tr>
+		
+	<tr>
+		<td>Mobile Number:</td>
+		<td><input id="phone" type="text"  pattern="^\d{10}$"  required title="Mobile number should be 10 digits">
+		</td>		
+	</tr>	
+	
+	<tr>
+		<td>Email:</td>
+		<td><input id="email" type="email"  required title="Please Enter valid email id">
+		</td>		
+	</tr>
+	
+	<tr>
+	    <td>Category:</td>
+		<td>
+			<select id="category">				
+				<option VALUE="AC" selected>AC</option>
+				<option VALUE="NONAC">NONAC</option>
+			</select>
+		</td>		
+	</tr>
+	
+	<tr>
+	    <td>ROOM :</td>
+		<td>
+			<select id="type">
+				<option value="SINGLE">  SINGLE</option>				
+				<option value="DOUBLE">  DOUBLE</option>				
+				<option value="SUIT"> SUIT</option>				
+				<option value="FAMILY" selected> FAMILY</option>				
+							
+			</select>
+		</td>		
+	</tr>
+	
+	<tr>
+		<td>No of Days:</td>
+		<td><input id="days" type="number" min="1" max="30" required title="No. of days should be 1 - 30 ">
+		</td>		
+	</tr>		
+	<tr>
+		<td></td>
+		<td> <input type="submit" id="btn" value="Book"> </td>
+	</tr>
+</table>	
+</body>
+</form>
+</center>
+</body>
+</html>

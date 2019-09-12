@@ -1,0 +1,25 @@
+DbMS SQl
+DQL-61
+   from where select as like null between in || and or Not
+Distinct 80
+
+order by 81
+sorting data 84
+
+
+
+
+
+Syntax :group by & having Clause  100
+Group func-101
+ex of g& H-108
+
+
+
+SIngle row 
+Number functions(FLOOR,abds,round,trunc,ceil,power,sqrt,sign,mod)-120
+ character func(lower,upper,initcap,concat,substr,ltrim,rtrim,length,lpad,rpad)-124
+*****date func-128
+arithmetic with dates-133
+conversion func-134
+other(nvl,case,decode)-136

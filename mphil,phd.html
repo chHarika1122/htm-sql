@@ -1,0 +1,119 @@
+
+<!DOCTYPE html> 
+	<html> 
+	<head> 
+	<style> 
+	table{border:5px solid;} 
+	</style> 
+	
+	<script> 
+	function Research Topic Validate() {
+            var e = document.getElementById("Research Topic View");
+            
+            if (optionSelIndex == 0) {
+                alert("Please select a Course");
+            }
+            else {
+                alert("Success !! You have selected Course : " + optionSelectedText); ;
+            }
+        }
+ function  Validate() {
+            var e = document.getElementById("Research Topic View");
+            
+            if (optionSelIndex == 0) {
+                alert("Please select the Guide");
+            }
+            else {
+                alert("You have selected Course the guide : " + optionSelectedText); ;
+            }
+        }
+	function display() 
+	{ 
+	
+	
+	alert(Please select the course name); 
+	var win = window.open("","","width=300,height=300"); 
+	win.document.write("Total amount = "+result) 
+	} 
+	else 
+	{ 
+	alert("Please enter All the Fields") 
+	} 
+	} 
+	
+	</script> 
+	</head> 
+         
+	<body style="color:purple;"> 
+	<center><H1><b>Mphil/Phd Registration Form</b></H1> 
+    
+	<form onsubmit="display()"> 
+      <center>
+
+	<table style="background:ivory;box-shadow:10px 5px 10px"> 
+	<tr> 
+	<td><label>Scholar Roll number</label></td> 
+	<td><input type = "text" id ="name" placeholder="Enter Roll no"pattern="[a-zA-z0-9]{5,}" title="characters more than 5 " required/></td> 
+	</tr> 
+	
+	<tr> 
+	<td><label>First Name</label></td> 
+	<td><input type = "text" id ="name" pattern = "[a-zA-Z]{2,}" placeholder="Enter First name"required/></td> 
+	</tr> 
+    <tr> 
+	<td><label>Last Name</label></td> 
+	<td><input type = "text" id ="name" pattern = "[a-zA-Z]{3,}" placeholder="Enter last name"required/></td> 
+	</tr>
+    <tr> 
+	<td><label>Course</label></td> 
+  <td><input type="radio" value="PHD" name="course"/>PHD<input type="radio" value="Mphil" name="Mphil">MPHIL</td>  
+  <td><span></span></td>  
+ </tr> 
+	 <tr>
+  <td>Registration Date</td>
+  <td><input type="date"  id ="Registration date" pattern = "[0-9]-[a-zA-Z]/[0-9]" name="date"/></td>  
+  <td><span></span></td>  
+ </tr>
+ 
+
+<tr> 
+	<td><label>Mobile Number</label></td> 
+	<td><input type = "text" id ="mob" pattern = "[0-9]{10}" placeholder="Enter 10 digit phone no"required/></td> 
+	</tr> 
+	
+	
+	
+  <td>Research Topic</td>
+  <td><input type="text"  id ="Research Topic" pattern = "[a-zA-Z]" name="topic"/></td> 
+  <tr> 
+	<td><label> Guide Name</label></td> 
+	<td><select id = "category" onchange = "getCategory()" required> 
+	<option value ="Comics ">DR.Rajiv  Rajanathan</option> 
+	<option value = "Politics">Dr.Vijay Mathur</option> 
+    <option value =" Sports">Dr. Binod Kumar</option> 
+    <tr>
+  <td><span></span></td>  
+ </tr>
+
+	</select> 
+	</td> 
+	</tr> 
+	
+	<tr> 
+	<td><label>Permanent Address</label></td> 
+	<td><input id = "text" type = "alpha numeric"  placeholder="enter the address" required/></td> 
+	</tr> 
+	
+	<tr> 
+	<td><input type="submit" value="Submit"/></td>  
+	<td><input type="button" value="Cancel"/></td> 
+	</tr> 
+	
+	</table> 
+</center>
+	</form> 
+
+	</body> 
+	
+	</html>
+
